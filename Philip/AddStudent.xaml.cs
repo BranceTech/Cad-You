@@ -40,10 +40,7 @@ namespace chool.views
 
         private void saveStudentData_Clicked(object sender, RoutedEventArgs e)
         {
-            string query2 = "insert into teacher values(0710414406,'Fifth','Philoo','Mwasi','Male')";
-            string query3 = "insert into note(value, phone, level) values('philoo come quick',0710414406,'General')";
-
-
+           
 
             //adding data to database
             string query1 = "insert into student(fname,lname,gender,level) " +
