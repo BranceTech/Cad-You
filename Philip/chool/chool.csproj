@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\icons\building.png" />
+    <None Remove="assets\icons\icons8-class-48.png" />
+    <None Remove="assets\icons\icons8-home-page-50.png" />
+    <None Remove="assets\icons\icons8-ok-48.png" />
+    <None Remove="assets\icons\icons8-plus-48.png" />
+    <None Remove="assets\icons\icons8-refresh-48.png" />
+    <None Remove="assets\icons\icons8-undelete-48.png" />
+    <None Remove="assets\icons\note.png" />
+    <None Remove="assets\icons\students.png" />
+    <None Remove="assets\icons\subject.png" />
+    <None Remove="assets\icons\teacher.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+  <Folder Include="\assets\icons\" />
+    <Folder Include="model\" />
+    <Folder Include="viewModels\" />
+    <Folder Include="assets\fonts\" />
+    <Folder Include="assets\styles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="34.0.2" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.0" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\icons\icons8-class-48.png" />
+    <Resource Include="assets\icons\icons8-home-page-50.png" />
+    <Resource Include="assets\icons\note.png" />
+    <Resource Include="assets\icons\icons8-ok-48.png" />
+    <Resource Include="assets\icons\icons8-plus-48.png" />
+    <Resource Include="assets\icons\icons8-refresh-48.png" />
+    <Resource Include="assets\icons\building.png" />
+    <Resource Include="assets\icons\icons8-undelete-48.png" />
+    <Resource Include="assets\icons\students.png" />
+    <Resource Include="assets\icons\subject.png" />
+    <Resource Include="assets\icons\teacher.png" />
+  </ItemGroup>
+
+</Project>

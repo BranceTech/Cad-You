@@ -1,0 +1,66 @@
+﻿<!-- xmlns:viewModels="clr-namespace:chool.viewModels"-->
+
+<Window x:Class="chool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      
+        xmlns:local="clr-namespace:chool"
+        xmlns:views="clr-namespace:chool.views"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1000" WindowStartupLocation="CenterScreen" Background="#202020">
+
+    <Window.Resources>
+       
+        
+        
+        
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Menu -->
+       
+        <DockPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Background="#202020">
+            <StackPanel>
+                <Button Content="Home"  Style="{DynamicResource ResourceKey=menuBtn}" Click="home_clicked"/>
+                <Button Content="Add students"  Style="{DynamicResource ResourceKey=menuBtn}" Click="addStudent_clicked"/>
+                <Button Content="Add Teacher"  Style="{DynamicResource ResourceKey=menuBtn}" Click="addTeacher_clicked" />
+                <Button Content="Enter Grades "  Style="{DynamicResource ResourceKey=menuBtn}" Click="viewStudents_Click" />
+                <Button Content="Find data"  Style="{DynamicResource ResourceKey=menuBtn}" Click="viewData_Click" />
+                <Button Content="Add class"  Style="{DynamicResource ResourceKey=menuBtn}" Click="addClass_clicked" />
+                <Button Content="Add subjects"  Style="{DynamicResource ResourceKey=menuBtn}" Click="addSubjects_clicked" />
+                <Button Content="Update grades"  Style="{DynamicResource ResourceKey=menuBtn}" Click="edditGrades_clicked" />
+                <Button Content="Leave a note"  Style="{DynamicResource ResourceKey=menuBtn}" Click="prepareNotes_clicked" />
+
+            </StackPanel>
+           
+
+        </DockPanel>
+        <ContentControl Grid.Column="1" 
+                        Grid.Row="0" 
+                        Grid.ColumnSpan="4" 
+                        Grid.RowSpan="5" 
+                        Content="{Binding}" 
+                        Background="#202020"/>
+        
+    </Grid>
+
+</Window>
